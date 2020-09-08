@@ -6,7 +6,7 @@
 <p>Sempre inicie uma nova branch a partir da master, evitando assim que conflitos ou erros sejam propagados.</p>
 <p>Vamos tentar manter apenas com o código que plenamente funcional</p>
 
-<h1> Sobre este repositório<h1>
+<h1> Sobre este repositório</h1>
 
 <p>Para iniciar o server no linux  simplificado.</p>
 <p>No linux: no terminal execute <b>chmod +x dev.sh </b> para permitir que o arquivo seja executado</p>
