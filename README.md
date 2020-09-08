@@ -8,6 +8,13 @@
 
 <h1> Sobre este repositório<h1>
 
-<p>Para executar os testes existe um arquivo de bash (teste.sh).</p>
+<p>Para iniciar o server no linux  simplificado.</p>
+<p>No linux: no terminal execute <b>chmod +x dev.sh </b> para permitir que o arquivo seja executado</p>
+<p>Ainda no terminal execute <b>./dev.sh</b></p>
+
+<br/>
+
+<p>Para iniciar os testes no linux  simplificado.</p>
 <p>No linux: no terminal execute <b>chmod +x test.sh </b> para permitir que o arquivo seja executado</p>
+<p>Este arquivo será configurado para executar os testes automaticamente em momento de deploy</p>
 <p>Ainda no terminal execute <b>./test.sh</b></p>
