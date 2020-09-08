@@ -8,6 +8,8 @@
 
 <h1> Sobre este repositório</h1>
 
+<h2>Lembrem-se de executar <b>npm install</b> para que os pacotes sejam baixads corretamente.</h2>
+
 <p>Para iniciar o server no linux  simplificado.</p>
 <p>No linux: no terminal execute <b>chmod +x dev.sh </b> para permitir que o arquivo seja executado</p>
 <p>Ainda no terminal execute <b>./dev.sh</b>.</p>
