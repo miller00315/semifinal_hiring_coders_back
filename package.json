@@ -1,0 +1,11 @@
+{
+  "name": "semifinal_hiring_coders_back",
+  "version": "1.0.0",
+  "description": "Backend para aplicaçao do projeto final do hiring coders Gama Academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
