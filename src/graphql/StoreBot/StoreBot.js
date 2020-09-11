@@ -1,10 +1,16 @@
 import { gql } from 'apollo-server-express';
+import StoreBotController from '../../controllers/StoreBotController';
 
 export const typeDefs = gql`
+  type MessageUser implements Node {
+    id: ID!
+    name: String!
+  }
+
   type Message implements Node {
     id: ID!
-    text: String!
-    user: String!
+    content: String!
+    user: MessageUser!
   }
 
   type Chat implements List {
@@ -12,8 +18,14 @@ export const typeDefs = gql`
     totalItems: Int!
   }
 
+  input User {
+    id: String!
+    name: String!
+  }
+
   input ChatOptions {
-    id: ID!
+    content: String!
+    user: User!
   }
 
   extend type Query {
@@ -24,17 +36,7 @@ export const typeDefs = gql`
 export const resolvers = {
   Query: {
     chat: async (_, args) => {
-      console.log(args.options.id);
-      return {
-        items: [
-          {
-            id: 'ghfghfghfhgfh',
-            text: 'em que posso lhe ajudar',
-            user: 'Miller',
-          },
-        ],
-        totalItems: 1,
-      };
+      return await StoreBotController.Chat(args.options);
     },
   },
 };
