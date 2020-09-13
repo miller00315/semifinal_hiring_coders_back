@@ -1,14 +1,33 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const Chat = async (message) => {
-  return {
-    items: [
-      {
-        id: 'ghfghfghfhgfh',
-        content: `em que posso lhe ajudar ${message.user.name}`,
-        user: message.user,
+  const items = [];
+
+  if (message.content === 'initial') {
+    items.push({
+      id: uuidv4(),
+      content: 'Bem vindo ao nosso chat',
+      user: {
+        name: 'StoreBot',
+        id: 'id_bot_store',
       },
-    ],
-    totalItems: 1,
+    });
+  } else {
+    //Processa a mensagem
+    items.push({
+      id: uuidv4(),
+      content: 'Reposta api',
+      user: {
+        name: 'StoreBot',
+        id: 'id_bot_store',
+      },
+    });
+  }
+
+  return {
+    items,
+    totalItems: items.length,
   };
 };
 
-module.exports = { Chat };
+export default { Chat };

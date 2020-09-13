@@ -26,6 +26,7 @@ export const typeDefs = gql`
   input ChatOptions {
     content: String!
     user: User!
+    id: String!
   }
 
   extend type Query {
