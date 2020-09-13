@@ -10,6 +10,7 @@ export const typeDefs = gql`
   type Message implements Node {
     id: ID!
     content: String!
+    url: String
     user: MessageUser!
   }
 
